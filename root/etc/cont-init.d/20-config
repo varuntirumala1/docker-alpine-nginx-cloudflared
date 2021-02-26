@@ -28,6 +28,11 @@ sed -i "s#;error_log = log/php7/error.log.*#error_log = /config/log/php/error.lo
 # copy user www2.conf to image
 cp /config/php/www2.conf /etc/php7/php-fpm.d/www2.conf
 
+# permissions
+chown -R root:root \
+	/config \
+	/var/lib/nginx \
+	/var/tmp/nginx
 chmod -R g+w \
 	/config/{nginx,www}
 chmod -R 644 /etc/logrotate.d
