@@ -1,4 +1,4 @@
-FROM varuntirumala1/alpine:latest
+FROM gcr.io/prime-burner-274908/alpine:latest
 
 # install packages
 RUN apk add --no-cache \
