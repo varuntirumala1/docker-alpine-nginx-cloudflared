@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.14
+FROM gcr.io/prime-burner-274908/alpine:latest
 
 # install packages
 RUN \
